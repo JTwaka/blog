@@ -1,0 +1,84 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Jtao-Blog</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates ">
+	<meta name="author" content="#">
+
+    <!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS -->
+  	<link rel="stylesheet" href={% static 'css/zerogrid.css' %}>
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+
+	<!-- Custom Fonts -->
+    <link href={% static 'font-awesome/css/font-awesome.min.css' %} rel="stylesheet" type="text/css">
+
+
+	<link rel="stylesheet" href={% static 'css/menu.css' %}>
+	<script src={% static 'js/jquery1111.min.js' %} type="text/javascript"></script>
+	<script src={% static 'js/script.js' %} ></script>
+
+	<!-- Owl Carousel Assets -->
+    <link href={% static 'owl-carousel/owl.carousel.css' %} rel="stylesheet">
+
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/Items/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src={% static 'js/html5.js' %}></script>
+		<script src={% static 'js/css3-mediaqueries.js' %}></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div class="wrap-body">
+        <!-- 菜单栏 -->
+		{% block menu %}
+            <div id='cssmenu' class="align-center">
+                <ul>
+                   <li class="active"><a href='{% url 'index' %}'><span>blog</span></a></li>
+{#                   <li><a href=''><span>Blog</span></a></li>#}
+                   <li><a href=''><span>About me?</span></a></li>
+                   <li><a href={% url 'base' %}><span>呀唲喲~</span></a></li>
+                </ul>
+		    </div>
+		{% endblock %}
+		<!-- 显示 文章 -->
+        {% block article_list %} {% endblock %}
+        <!-- 或者 显示中间内容 -->
+        {% block center_content %} {% endblock %}
+		<!--////////Footer-->
+		<footer>
+			<div class="zerogrid wrap-footer">
+				<div class="row">
+					<div class="bottom-social">
+                        <a href="#"><i class="fa fa-weibo"></i></a>
+                        <a href="https://github.com/JTwaka" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="{% url 'question' %}"><i class="fa fa-question"></i></a>
+                        <a href="{% url 'wheelchair' %}"><i class="fa fa-wheelchair"></i></a>
+                        <a href="{% url 'heartbeat' %}"><i class="fa fa-heartbeat"></i></a>
+                        <a href="{% url 'bug' %}"><i class="fa fa-bug"></i></a>
+					</div>
+				</div>
+				<div class="copyright">
+					Copyright @ - Jtao Personal Property ~.~ 9527 -
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

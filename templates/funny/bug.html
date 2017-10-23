@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block menu %}
+    <div id='cssmenu' class="align-center">
+        <ul>
+           <li class="last"><a href='{% url 'index' %}'><span>Home</span></a></li>
+           <li class='has-sub'><a href=''><span>Blog</span></a>
+              <ul >
+                  <!-- blog分类 列表 -->
+                  <li><a href=''><span>Item 1</span></a></li>
+                  <li><a href=''><span>Item 2</span></a></li>
+              </ul>
+           </li>
+           <li><a href=''><span>About</span></a></li>
+           <li class='active'><a href={% url 'base' %}><span>Contacts</span></a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block center_content %}
+
+<h1>BUG</h1>
+
+{% endblock %}
