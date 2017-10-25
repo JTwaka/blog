@@ -1,8 +1,17 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
+{% block menu %}
+     <div id='cssmenu' class="align-center">
+        <ul>
+           <li><a href='{% url 'index' %}'><span>blog</span></a></li>
+           <li><a href=''><span>About me?</span></a></li>
+           <li><a href={% url 'base' %}><span>呀唲喲~</span></a></li>
+        </ul>
+     </div>
+{% endblock %}
+
+
 {% block center_content %}
-
 <h1>❤️❤️❤️❤️❤️❤️</h1>
-
 {% endblock %}

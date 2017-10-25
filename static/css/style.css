@@ -187,7 +187,7 @@ a.button:hover{background-color: #eee;color: #333;}
 }
 
 
-/*分页效果  float:right;  */
+/* 分页效果 */
 #pagination{float:right; margin:2px 0;}
 #pagination-flickr li { border:0; margin:0; padding:0; font-size:15px; list-style:none; /* savers */ float:left; }
 #pagination-flickr a { border:solid 1px #DDDDDD; margin-right:2px; }
@@ -197,3 +197,8 @@ a.button:hover{background-color: #eee;color: #333;}
 #pagination-flickr a:link,
 #pagination-flickr a:visited { color:#0063e3; display:block; float:left; padding:3px 6px; text-decoration:none; }
 #pagination-flickr a:hover { color:#FF00FF; }
+
+/* 自己设置的css */
+#jtcenter_content{height: auto; background: red; border: 5px; border-bottom-color: red}
+
+

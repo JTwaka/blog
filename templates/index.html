@@ -1,5 +1,15 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+<!-- 菜单栏 -->
+{% block menu %}
+    <div id='cssmenu' class="align-center">
+        <ul>
+           <li class="active"><a href='{% url 'index' %}'><span>blog</span></a></li>
+           <li><a href={% url 'about' %}><span>About me?</span></a></li>
+           <li><a href={% url 'links' %}><span>呀唲喲~</span></a></li>
+        </ul>
+    </div>
+{% endblock %}
 
 <!--////////////////////////////////////Container-->
 {% block article_list %}

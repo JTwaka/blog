@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!-- 菜单栏 -->
+{% block menu %}
+    <div id='cssmenu' class="align-center">
+        <ul>
+           <li><a href='{% url 'index' %}'><span>blog</span></a></li>
+           <li><a href={% url 'about' %}><span>About me?</span></a></li>
+           <li class="active"><a href={% url 'links' %}><span>呀唲喲~</span></a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+<!--////////////////////////////////////Container-->
+{% block center_content %}
+    <div id="jtcenter_content">
+        <p>asd</p>
+    </div>
+
+{% endblock %}

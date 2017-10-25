@@ -1,25 +1,5 @@
 
 # -*- coding: utf-8 -*-
-# //                            _ooOoo_
-# //                           o8888888o
-# //                           88" . "88
-# //                           (| -_- |)
-# //                           O\  =  /O
-# //                        ____/`---'\____
-# //                      .'  \\|     |//  `.
-# //                     /  \\|||  :  |||//  \
-# //                    /  _||||| -:- |||||-  \
-# //                    |   | \\\  -  /// |   |
-# //                    | \_|  ''\---/''  |   |
-# //                    \  .-\__  `-`  ___/-. /
-# //                  ___`. .'  /--.--\  `. . __
-# //               ."" '<  `.___\_<|>_/___.'  >'"".
-# //              | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-# //              \  \ `-.   \_ __\ /__ _/   .-` /  /
-# //         ======`-.____`-.___\_____/___.-`____.-'======
-# //                            `=---='
-# //        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-# //                      佛祖保佑       永无BUG
 from __future__ import unicode_literals
 
 from django.core.paginator import Paginator, EmptyPage, InvalidPage, PageNotAnInteger
@@ -47,7 +27,15 @@ def getPage(request, article_list):
     return article_list
 
 
-#
+def about(request):
+    return render(request, 'about.html', locals())
+
+
+def links(request):
+    return render(request, 'links.html', locals())
+
+
+# 最开始的代码
 def base(request):
     return render(request, 'base.html', locals())
 
@@ -62,9 +50,5 @@ def heartbeat(request):
 
 def wheelchair(request):
     return render(request, 'funny/wheelchair.html', locals())
-
-
-def question(request):
-    return render(request, 'funny/question.html', locals())
 
 
