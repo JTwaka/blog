@@ -10,7 +10,7 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
 
-    list = [1,2,3,4,5,6,1,2,324,235,1]
+    list = [1, 2, 3, 4, 5, 6, 1, 2, 324, 235, 1]
     article_list = getPage(request, list)
 
     return render(request, 'index.html', locals())
