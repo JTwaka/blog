@@ -18,7 +18,7 @@ django-cors-headers==2.1.0
 django-crontab==0.7.1
 django-excel==0.0.9
 django-redis==4.8.0
-djangorestframework==3.6.3
+djangorestframework==3.11.2
 e4u==0.2rc1
 entrypoints==0.2.3
 enum34==1.1.6
