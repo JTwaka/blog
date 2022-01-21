@@ -31,7 +31,7 @@ httpie==0.9.9
 idna==2.5
 ipdb==0.10.3
 ipykernel==4.6.1
-ipython==5.4.1
+ipython==7.16.3
 ipython-genutils==0.2.0
 ipywidgets==7.0.0
 jdcal==1.3
