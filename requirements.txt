@@ -23,7 +23,7 @@ e4u==0.2rc1
 entrypoints==0.2.3
 enum34==1.1.6
 et-xmlfile==1.0.1
-flower==0.9.2
+flower==1.2.0
 functools32==3.2.3.post2
 futures==3.1.1
 html5lib==0.999999999
